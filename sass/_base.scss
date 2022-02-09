@@ -1,0 +1,34 @@
+:root {
+    --color-primary: #FFFFFF;
+
+    --color-brown-1: #3E3C38;
+    --color-brown-2: #403E3B;
+
+    --color-green-light-1: #206E73;
+    --color-green-light-2: #76BAB6;
+    --color-green-light-3: #A5D7D5;
+
+    --color-green-dark-1: #025A60;
+
+    --color-heart: #DB6751;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-primary);
+}

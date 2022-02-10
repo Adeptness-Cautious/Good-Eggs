@@ -1,0 +1,17 @@
+.header {
+    height: 11.5rem;
+    background-color: yellow;
+    border: 1px solid red;
+
+    &-company-logo-container {
+        display: inline-block;
+        border: 1px solid blue;
+    }
+
+    &-container {
+        margin: 0 8rem;
+        padding-top: 1rem;
+        height: inherit;
+        border: 1px solid green;
+    }
+}

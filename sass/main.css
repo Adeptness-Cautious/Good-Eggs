@@ -26,6 +26,30 @@ html {
 }
 
 body {
+  font-family: 'Arimo', sans-serif;
   background-color: var(--color-primary);
+}
+
+.header {
+  height: 11.5rem;
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+.header-company-logo-container {
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+.header-container {
+  margin: 0 8rem;
+  padding-top: 1rem;
+  height: inherit;
+  border: 1px solid green;
+}
+
+.header-company-logo__img {
+  width: 10.5rem;
+  /* or any custom size */
 }
 /*# sourceMappingURL=main.css.map */

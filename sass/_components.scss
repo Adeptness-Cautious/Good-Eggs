@@ -1,5 +1,15 @@
+/* 
+HEADER AREA - logo, two item div's
+*/
+
 .header {
     &-company-logo__img {
         width: 10.5rem; /* or any custom size */
     }
+
+    &-item-div-links {
+        display: flex;
+        list-style-type: none;
+    }
+
 }

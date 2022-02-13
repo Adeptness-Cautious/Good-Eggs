@@ -30,26 +30,47 @@ body {
   background-color: var(--color-primary);
 }
 
+/* 
+HEADER AREA - logo, two item div's
+*/
 .header {
   height: 11.5rem;
-  background-color: yellow;
-  border: 1px solid red;
-}
-
-.header-company-logo-container {
-  display: inline-block;
-  border: 1px solid blue;
 }
 
 .header-container {
+  display: flex;
   margin: 0 8rem;
   padding-top: 1rem;
-  height: inherit;
+  height: 100%;
+  border: 1px solid violet;
+}
+
+.header-company-logo {
+  display: inline-block;
+}
+
+.header-item-divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  border: 1px solid red;
+}
+
+.header-item-div {
   border: 1px solid green;
 }
 
+/* 
+HEADER AREA - logo, two item div's
+*/
 .header-company-logo__img {
   width: 10.5rem;
   /* or any custom size */
+}
+
+.header-item-div-links {
+  display: flex;
+  list-style-type: none;
 }
 /*# sourceMappingURL=main.css.map */

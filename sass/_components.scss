@@ -9,7 +9,11 @@ HEADER AREA - logo, two item div's
 
     &-item-div-links {
         display: flex;
+        justify-content: space-between;
         list-style-type: none;
+
+        font-size: 1.3rem;
+        font-weight: 600;
     }
 
 }

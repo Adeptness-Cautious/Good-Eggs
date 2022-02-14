@@ -71,6 +71,9 @@ HEADER AREA - logo, two item div's
 
 .header-item-div-links {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

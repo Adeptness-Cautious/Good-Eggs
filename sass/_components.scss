@@ -62,4 +62,44 @@ HEADER AREA - logo, two item div's
         font-weight: 600;
         color: var(--color-brown-1);
     }
+
+    &-top-flexbox {
+        display:flex;
+        // border: 1px solid green;
+
+    }
+
+    &__image {
+        height: 43rem;
+        width: 66%;
+        object-fit: cover;
+        vertical-align: bottom;
+
+        // border: 1px solid green;
+    }
+
+    &-shop-now {
+        &-block {
+            // border: 1px solid red;
+            
+        }
+        
+        &-headings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid red;
+            height: 100%;
+        }
+
+        &__heading {
+            font-size: 3rem;
+        }
+
+        &__para {
+            font-size: 1.5rem;
+        }
+    }
 }

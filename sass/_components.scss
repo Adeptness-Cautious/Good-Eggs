@@ -48,10 +48,15 @@ HEADER AREA - logo, two item div's
     }
 }
 
+
+/*
+    MAIN HEADER BLOCK 
+*/
+
 .main {
 
     &-container {
-
+        border-bottom: 1px solid var(--color-border);
     }
 
     &__heading {
@@ -61,6 +66,7 @@ HEADER AREA - logo, two item div's
         font-size: 4rem;
         font-weight: 600;
         color: var(--color-brown-1);
+        // border: 1px solid red;
     }
 
     &-top-flexbox {
@@ -69,37 +75,139 @@ HEADER AREA - logo, two item div's
 
     }
 
+    &-top-img-div {
+        width: 66%;
+        // border: 1px solid green;
+    }
+
     &__image {
         height: 43rem;
-        width: 66%;
+        width: 100%;
         object-fit: cover;
         vertical-align: bottom;
+        flex-grow: 2;
 
+
+        &:hover {
+            cursor: pointer;
+        }
         // border: 1px solid green;
     }
 
     &-shop-now {
         &-block {
-            // border: 1px solid red;
-            
+            // border: 1px solid yellow;
+
+            flex: 1 0 0;
+
+            position: relative;
+
         }
         
         &-headings {
+            // border: 1px solid green;
+            position: absolute;
+            top: 32%;
+
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
 
-            border: 1px solid red;
-            height: 100%;
+            margin: 0 5rem;
         }
 
         &__heading {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+
+            &--text {
+                color: var(--color-brown-1);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--color-green-dark-1);
+                    border-bottom: 1px solid var(--color-green-dark-1);
+                }
+            }
         }
 
         &__para {
             font-size: 1.5rem;
+            text-align: center;
+            line-height: 2rem;
+            color: var(--color-brown-2);
+
+            margin-bottom: 2rem;
         }
+    }
+}
+
+
+/*
+    ITEM CARDS SECTION
+*/
+
+.item-cards {
+    &-div1 {
+        margin-top: 7rem;
+    }
+
+    &-div__heading {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    &-flex-div {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    &__image {
+        width: 29.5rem;
+    }
+
+    &__details {
+        padding: 1.2rem;
+        border: 1px solid red;
+    }
+
+    &__farm-name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+    }
+
+    &__item-name {
+        font-size: 1.8rem;
+    }
+}
+
+/*REUSABLE COMPONENTS*/
+.btn-inline {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-style: 600;
+    text-transform: uppercase;
+
+    padding: 5px 1rem;
+
+    border-radius: 100px;
+    border: 1px solid var(--color-green-light-2);
+
+    color: var(--color-green-light-2);
+    background-color: white;
+
+    &:hover {
+        background-color: var(--color-green-light-2);
+        color: white;
+        cursor: pointer;
     }
 }

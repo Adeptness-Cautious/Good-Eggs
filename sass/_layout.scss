@@ -2,6 +2,10 @@
 HEADER AREA - logo, two item div's
 */
 
+.container {
+    height: 500rem;
+}
+
 .header {
     height: 11.5rem;
     border-bottom: 2px solid var(--color-border);
@@ -20,6 +24,10 @@ HEADER AREA - logo, two item div's
 
 .main-container {
     margin: 0 10rem;
-    border: 1px solid violet;
+    // border: 1px solid violet;
 }
 
+
+.item-cards {
+    margin: 0 10rem;
+}

@@ -282,4 +282,12 @@ HEADER AREA - logo, two item div's
 .header-item-margin-left {
   margin-left: 2rem;
 }
+
+.header-item-div-margin-left {
+  margin-left: 4rem;
+}
+
+.inner-link {
+  font-weight: 400;
+}
 /*# sourceMappingURL=main.css.map */

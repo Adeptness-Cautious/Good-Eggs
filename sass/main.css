@@ -80,12 +80,45 @@ HEADER AREA - logo, two item div's
   padding-bottom: 3rem;
 }
 
+.header-item-div-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-item-div-link__text {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
 .header-item-div-links {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+.header-item-div-links-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-item-div-links-right {
+  display: flex;
+}
+
+.header__svg-icon {
+  height: 2.3rem;
+  width: 2.3rem;
+  fill: var(--color-green-dark-1);
+}
+
+.header__svg-icon-heart {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: -.5rem;
+  fill: var(--color-heart);
 }
 
 /*
@@ -244,5 +277,9 @@ HEADER AREA - logo, two item div's
   background-color: var(--color-green-light-2);
   color: white;
   cursor: pointer;
+}
+
+.header-item-margin-left {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

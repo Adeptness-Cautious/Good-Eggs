@@ -10,41 +10,84 @@ HEADER AREA - logo, two item div's
         &-container {
             // border: 1px solid blue;
         }
-    }
 
-    &-company-logo__img {
-        width: 10.5rem; /* or any custom size */
+        &__img {
+            width: 10.5rem; /* or any custom size */
+        }
     }
-
-   
 
     
+
    
-    &-item-divs {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-        
-        padding-bottom: 3rem;
 
-        // height: 100%;
-        // width: 90%;
+    &-item {
+        &-divs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            
+            padding-bottom: 3rem;
+    
+            // height: 100%;
+            // width: 90%;
+            // border: 1px solid red;
+            
+        }
+    
+        &-div {
+            // border: 1px solid green;
+    
+            &-link {
+                display: flex;
+                align-items: center;
+                // border: 1px solid yellow;
+        
+                &__text {
+                    margin-left: 1rem;
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                }
+            }
+    
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+        
+                font-size: 1.3rem;
+                font-weight: 600;
+        
+        
+                &-left {
+                    display: flex;
+                    align-items: center;
+                    // border: 1px solid red;
+                }
+        
+                &-right {
+                    display: flex;
+                    // border: 1px solid green;
+                }
+            }
+        }
+    }
+  
+
+
+    &__svg-icon {
+        height: 2.3rem;
+        width: 2.3rem;
         // border: 1px solid red;
-        
-    }
+        fill: var(--color-green-dark-1);
 
-    &-item-div {
-        // border: 1px solid green;
-    }
+        &-heart {
+            height: 1.5rem;
+            width: 1.5rem;
 
-    &-item-div-links {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-
-        font-size: 1.3rem;
-        font-weight: 600;
+            margin-right: -.5rem;
+            fill: var(--color-heart);
+        }
     }
 }
 
@@ -255,3 +298,10 @@ HEADER AREA - logo, two item div's
         cursor: pointer;
     }
 }
+
+.header {
+    &-item-margin-left{
+        margin-left: 2rem;
+    }
+}
+

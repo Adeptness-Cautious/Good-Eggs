@@ -172,11 +172,13 @@ HEADER AREA - logo, two item div's
 .main-shop-now__heading {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .main-shop-now__heading--text {
   color: var(--color-brown-1);
   text-decoration: none;
+  font-weight: 900;
 }
 
 .main-shop-now__heading--text:hover {
@@ -184,10 +186,15 @@ HEADER AREA - logo, two item div's
   border-bottom: 1px solid var(--color-green-dark-1);
 }
 
+.main-shop-now__heading-mid {
+  font-size: 2.3rem;
+}
+
 .main-shop-now__para {
   font-size: 1.5rem;
   text-align: center;
   line-height: 2rem;
+  letter-spacing: .5px;
   color: var(--color-brown-2);
   margin-bottom: 2rem;
 }
@@ -255,9 +262,53 @@ HEADER AREA - logo, two item div's
   color: var(--color-grey);
 }
 
+.item-cards-purchase-price-left {
+  align-self: flex-end;
+}
+
+.item-cards-purchase-price-right {
+  display: flex;
+  align-items: center;
+}
+
 .item-cards__purchase-unit {
   font-size: 1.1rem;
   font-weight: 900;
+  margin-bottom: -.5rem;
+}
+
+.item-cards__sp-dollars {
+  font-size: 2rem;
+  margin-left: .5rem;
+  padding-right: 1.5rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.item-cards__sp-cents {
+  font-size: 1rem;
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  right: 3px;
+}
+
+.item-cards-see-more-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.item-cards-see-more__text {
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+.item-cards-see-more__icon {
+  height: 1.3rem;
+  width: 2rem;
+  border: 1px solid green;
 }
 
 /*REUSABLE COMPONENTS*/

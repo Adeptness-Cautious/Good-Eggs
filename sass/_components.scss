@@ -95,7 +95,7 @@ HEADER AREA - logo, two item div's
 .main {
 
     &-container {
-        border-bottom: 1px solid var(--color-border);
+        
     }
 
     &__heading {
@@ -110,6 +110,15 @@ HEADER AREA - logo, two item div's
 
     &-top-flexbox {
         display:flex;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+
+        &:hover {
+            transition: box-shadow .1s;
+            box-shadow: 0 4px 20px 0 rgba(0,0,0,.2);
+        }
+
         // border: 1px solid green;
 
     }
@@ -306,18 +315,35 @@ HEADER AREA - logo, two item div's
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            margin: 2rem 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+            // border: 1px solid red;
         }
         &__text {
             margin-left: 5px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            color: var(--color-green-light-1);
+        }
+
+        &-icon-div {
+            // background-color: yellow;
+            // border: 1px solid red;
+            border-radius: 50%;
+            padding: 5px;
+            fill: var(--color-green-light-1);
+            background-color: var(--color-green-light-5);
         }
 
         &__icon {
-            height: 1.3rem;
-            width: 2rem;
+            height: 1.4rem;
+            width: 1.4rem;
+            display: block;
+            // border: 1px solid green;
 
-            border: 1px solid green;
+            
         }
     }
 }

@@ -6,6 +6,7 @@
   --color-green-light-2: #3F9E99;
   --color-green-light-3: #76BAB6;
   --color-green-light-4: #A5D7D5;
+  --color-green-light-5: #D3E2E1;
   --color-green-dark-1: #025A60;
   --color-heart: #DB6751;
   --color-border: #E8E6E6;
@@ -124,10 +125,6 @@ HEADER AREA - logo, two item div's
 /*
     MAIN HEADER BLOCK 
 */
-.main-container {
-  border-bottom: 1px solid var(--color-border);
-}
-
 .main__heading {
   margin: 4rem 0;
   font-size: 4rem;
@@ -137,6 +134,14 @@ HEADER AREA - logo, two item div's
 
 .main-top-flexbox {
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-top-flexbox:hover {
+  transition: box-shadow .1s;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-top-img-div {
@@ -297,18 +302,30 @@ HEADER AREA - logo, two item div's
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  margin: 2rem 0;
+}
+
+.item-cards-see-more-items:hover {
+  cursor: pointer;
 }
 
 .item-cards-see-more__text {
   margin-left: 5px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: var(--color-green-light-1);
+}
+
+.item-cards-see-more-icon-div {
+  border-radius: 50%;
+  padding: 5px;
+  fill: var(--color-green-light-1);
+  background-color: var(--color-green-light-5);
 }
 
 .item-cards-see-more__icon {
-  height: 1.3rem;
-  width: 2rem;
-  border: 1px solid green;
+  height: 1.4rem;
+  width: 1.4rem;
+  display: block;
 }
 
 /*REUSABLE COMPONENTS*/

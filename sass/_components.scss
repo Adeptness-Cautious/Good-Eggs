@@ -88,6 +88,48 @@ HEADER AREA - logo, two item div's
 }
 
 
+// SMALL CARD ITEM BLOCK
+.small-card {
+
+    &-layout {
+
+    }
+
+    &-heading {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--color-brown-1);
+
+        margin-bottom: 2rem;
+    }
+
+    &-randc {
+
+    }
+
+    &-item {
+
+        &-div1 {
+
+        }
+
+        &__img {
+
+        }
+
+        &-div2 {
+
+        }
+
+        &__tag {
+            
+        }
+    }
+
+
+
+}
+
 /*
     MAIN HEADER BLOCK 
 */
@@ -100,7 +142,7 @@ HEADER AREA - logo, two item div's
 
     &__heading {
 
-        margin: 4rem 0;
+        margin: 4rem 0 3rem 0;
 
         font-size: 4rem;
         font-weight: 600;

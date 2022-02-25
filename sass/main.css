@@ -411,4 +411,19 @@ HEADER AREA - logo, two item div's
 .inner-link {
   font-weight: 400;
 }
+
+.page-end-container {
+  margin-bottom: 8rem;
+}
+
+.bottom-card-item {
+  height: 20rem;
+}
+
+.bottom-card-item-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*# sourceMappingURL=main.css.map */

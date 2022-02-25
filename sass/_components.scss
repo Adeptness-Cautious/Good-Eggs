@@ -420,6 +420,10 @@ HEADER AREA - logo, two item div's
     }
 }
 
+
+// SMALL CARD ITEM BLOCK - PAGE END
+
+
 /*REUSABLE COMPONENTS*/
 .btn-inline {
     font-weight: 600;
@@ -458,3 +462,21 @@ HEADER AREA - logo, two item div's
     font-weight: 400;
 }
 
+.page-end-container {
+    margin-bottom: 8rem;
+}
+
+.bottom-card-item {
+    height: 20rem;
+
+    &-div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+    }   
+
+}

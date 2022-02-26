@@ -393,6 +393,69 @@ HEADER AREA - logo, two item div's
   align-items: center;
 }
 
+.footer-container-top {
+  display: flex;
+  align-items: center;
+  height: 34rem;
+  border-bottom: 1px solid white;
+}
+
+.footer-container-bottom {
+  display: flex;
+  color: white;
+}
+
+.footer-container-img-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+}
+
+.footer-container__img {
+  width: 15rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-container__img-tag {
+  width: 31rem;
+}
+
+.footer-container-shop {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-container-shop__heading {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1.3rem;
+}
+
+.footer-container-shop-items {
+  list-style: none;
+  font-weight: 400;
+}
+
+.footer-container-shop__item {
+  margin: 0.8rem 0;
+}
+
+.footer-container-mid {
+  display: flex;
+  width: 30%;
+  border: 1px solid red;
+  margin-left: 8rem;
+  justify-content: space-between;
+}
+
+.footer-container-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /*REUSABLE COMPONENTS*/
 .btn-inline {
   font-weight: 600;

@@ -34,10 +34,6 @@ body {
   background-color: var(--color-primary);
 }
 
-.container {
-  height: 500rem;
-}
-
 .header {
   height: 11.5rem;
   border-bottom: 2px solid var(--color-border);
@@ -60,6 +56,11 @@ body {
 
 .small-card-layout {
   margin: 0 10rem;
+}
+
+.footer {
+  height: 40rem;
+  background-color: #233065;
 }
 
 /* 
@@ -381,6 +382,17 @@ HEADER AREA - logo, two item div's
   display: block;
 }
 
+.bottom-card-item {
+  height: 20rem;
+}
+
+.bottom-card-item-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*REUSABLE COMPONENTS*/
 .btn-inline {
   font-weight: 600;
@@ -414,16 +426,5 @@ HEADER AREA - logo, two item div's
 
 .page-end-container {
   margin-bottom: 8rem;
-}
-
-.bottom-card-item {
-  height: 20rem;
-}
-
-.bottom-card-item-div {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

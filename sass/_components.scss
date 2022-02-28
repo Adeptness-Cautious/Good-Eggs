@@ -504,6 +504,10 @@ HEADER AREA - logo, two item div's
                 background-color: var(--color-primary-dark);
                 border-radius: 6px;
                 padding: 0.3rem 0.6rem;
+
+                &:hover {
+                    background-color: var(--color-primary);
+                }
             }
             
             &-div-2 {
@@ -512,6 +516,9 @@ HEADER AREA - logo, two item div's
                 border-radius: 100%;
                 background-color: var(--color-primary-dark);
 
+                &:hover {
+                    background-color: var(--color-primary);
+                }
             }
 
         }
@@ -562,11 +569,13 @@ HEADER AREA - logo, two item div's
         height: 1.6rem;
         width: 1.6rem;
         fill: var(--color-violet);
+
     }
 
     &-icon-2 {
         height: 2rem;
         width: 2rem;
+        fill: var(--color-violet);
     }
 }
 

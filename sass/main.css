@@ -451,10 +451,18 @@ HEADER AREA - logo, two item div's
   padding: 0.3rem 0.6rem;
 }
 
+.footer-container-icon-div:hover {
+  background-color: var(--color-primary);
+}
+
 .footer-container-icon-div-2 {
   padding: 0.6rem 0.8rem;
   border-radius: 100%;
   background-color: var(--color-primary-dark);
+}
+
+.footer-container-icon-div-2:hover {
+  background-color: var(--color-primary);
 }
 
 .footer-container-end {
@@ -500,6 +508,7 @@ HEADER AREA - logo, two item div's
 .footer__svg-icon-2 {
   height: 2rem;
   width: 2rem;
+  fill: var(--color-violet);
 }
 
 /*REUSABLE COMPONENTS*/

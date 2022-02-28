@@ -478,6 +478,18 @@ HEADER AREA - logo, two item div's
   margin-left: 1.4rem;
 }
 
+.footer-container-bottom {
+  height: 6rem;
+  margin: 0 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.footer-container-bottom__terms {
+  margin-left: 2rem;
+}
+
 .footer-icons {
   display: flex;
   justify-content: space-between;

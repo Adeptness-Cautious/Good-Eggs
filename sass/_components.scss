@@ -537,6 +537,18 @@ HEADER AREA - logo, two item div's
             }
         }
 
+        &-bottom {
+            height: 6rem;
+            margin: 0 10rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+
+            &__terms {
+                margin-left: 2rem;
+            }
+        }
+
     }
 
     &-icons {

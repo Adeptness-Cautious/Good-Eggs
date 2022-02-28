@@ -495,24 +495,83 @@ HEADER AREA - logo, two item div's
                 margin: 0.8rem 0;
             }
         }
+        
 
+        &-icon {
+
+            &-div {
+                display: inline-block;
+                background-color: var(--color-primary-dark);
+                border-radius: 6px;
+                padding: 0.3rem 0.6rem;
+            }
+            
+            &-div-2 {
+                // border: 1px solid green;
+                padding: 0.6rem 0.8rem;
+                border-radius: 100%;
+                background-color: var(--color-primary-dark);
+
+            }
+
+        }
+
+        &-end {
+            // border: 1px solid green;
+            margin-left: 20rem;
+            margin-top: -14rem;
+
+            &-flex {
+                // border: 1px solid yellow;
+                display: flex;
+                & div:not(:first-child) {
+                    margin-left: 1.4rem;
+                }
+            }
+        }
+
+    }
+
+    &-icons {
+        display: flex;
+        justify-content: space-between;
+        // color: 1px solid green;
+        margin-right: 1rem;
+        margin-top: -5px;
     }
 }
 
 .footer-container-mid {
     display: flex;
     width: 30%;
-    border: 1px solid red;
-
+    // border: 1px solid yellow;
     margin-left: 8rem;
     justify-content: space-between;
 }
 
-.footer-container-third {
+.footer-container-third {    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
+
+.footer__svg {
+
+    &-icon-1 {
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: var(--color-violet);
+    }
+
+    &-icon-2 {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+
 /*REUSABLE COMPONENTS*/
 .btn-inline {
     font-weight: 600;

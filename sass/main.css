@@ -1,5 +1,6 @@
 :root {
   --color-primary: #FFFFFF;
+  --color-primary-dark: #EEEEEE;
   --color-brown-1: #3E3C38;
   --color-brown-2: #403E3B;
   --color-green-light-1: #206E73;
@@ -11,6 +12,7 @@
   --color-heart: #DB6751;
   --color-border: #E8E6E6;
   --color-grey: #9E9D9C;
+  --color-violet: #233065;
 }
 
 * {
@@ -60,7 +62,7 @@ body {
 
 .footer {
   height: 40rem;
-  background-color: #233065;
+  background-color: var(--color-violet);
 }
 
 /* 
@@ -442,10 +444,42 @@ HEADER AREA - logo, two item div's
   margin: 0.8rem 0;
 }
 
+.footer-container-icon-div {
+  display: inline-block;
+  background-color: var(--color-primary-dark);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+}
+
+.footer-container-icon-div-2 {
+  padding: 0.6rem 0.8rem;
+  border-radius: 100%;
+  background-color: var(--color-primary-dark);
+}
+
+.footer-container-end {
+  margin-left: 20rem;
+  margin-top: -14rem;
+}
+
+.footer-container-end-flex {
+  display: flex;
+}
+
+.footer-container-end-flex div:not(:first-child) {
+  margin-left: 1.4rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  margin-top: -5px;
+}
+
 .footer-container-mid {
   display: flex;
   width: 30%;
-  border: 1px solid red;
   margin-left: 8rem;
   justify-content: space-between;
 }
@@ -454,6 +488,18 @@ HEADER AREA - logo, two item div's
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footer__svg-icon-1 {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: var(--color-violet);
+}
+
+.footer__svg-icon-2 {
+  height: 2rem;
+  width: 2rem;
 }
 
 /*REUSABLE COMPONENTS*/

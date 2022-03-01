@@ -96,6 +96,12 @@ HEADER AREA - logo, two item div's
   font-weight: 900;
 }
 
+.header-item-div-link__text:hover {
+  color: var(--color-green-dark-1);
+  border-bottom: 1px solid var(--color-green-dark-1);
+  cursor: pointer;
+}
+
 .header-item-div-links {
   display: flex;
   justify-content: space-between;

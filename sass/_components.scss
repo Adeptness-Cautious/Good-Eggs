@@ -1,6 +1,10 @@
 /* 
 HEADER AREA - logo, two item div's
 */
+.header-item-div-link-relative {
+    position: relative;
+}
+
 
 .header {
 
@@ -8,7 +12,6 @@ HEADER AREA - logo, two item div's
         display: inline-block;
 
         &-container {
-            // border: 1px solid blue;
         }
 
         &__img {
@@ -24,21 +27,19 @@ HEADER AREA - logo, two item div's
             flex-grow: 1;
             
             padding-bottom: 3rem;
-    
-            // height: 100%;
-            // width: 90%;
-            // border: 1px solid red;
+
             
         }
     
         &-div {
-            // border: 1px solid green;
-
+            &-container {
+                display: flex;
+                align-items: center;
+            }
     
             &-link {
                 display: flex;
                 align-items: center;
-                // border: 1px solid yellow;
         
                 &__text {
                     margin-left: 1rem;
@@ -54,28 +55,32 @@ HEADER AREA - logo, two item div's
                     }
                 }
             }
+
+            &-link-relative {
+                position: relative;
+            }
     
             &-links {
                 display: flex;
                 justify-content: space-between;
                 list-style-type: none;
-                position: relative;
 
         
                 font-size: 1.3rem;
                 font-weight: 600;
-                // border: 1px solid red;
         
         
                 &-left {
                     display: flex;
                     align-items: center;
-                    // border: 1px solid red;
                 }
         
                 &-right {
                     display: flex;
-                    // border: 1px solid green;
+                }
+
+                &-height {
+                    height: 7.8rem;
                 }
             }
         }
@@ -84,7 +89,6 @@ HEADER AREA - logo, two item div's
     &__svg-icon {
         height: 2.3rem;
         width: 2.3rem;
-        // border: 1px solid red;
         fill: var(--color-green-dark-1);
 
         &-heart {
@@ -100,15 +104,22 @@ HEADER AREA - logo, two item div's
 
 //DROPDOWN  
 .dropdown {
-
+    position: absolute;
+    top: 11.5rem;
+    border: 1px solid var(--color-border);
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+;
     &-container {
-        position: absolute;
-        border: 1px solid green;
-        bottom: -7rem;
-        width: 25%;
+        width: 19%;
 
         &__li {
             margin: 1rem 4rem 1rem 2rem;
+            font-weight: 400;
+            font-size: 1.4rem;
+            letter-spacing: 1px;;
         }
     }
 }
@@ -203,7 +214,6 @@ HEADER AREA - logo, two item div's
         font-size: 4rem;
         font-weight: 600;
         color: var(--color-brown-1);
-        // border: 1px solid red;
     }
 
     &-top-flexbox {
@@ -217,13 +227,11 @@ HEADER AREA - logo, two item div's
             box-shadow: 0 4px 20px 0 rgba(0,0,0,.2);
         }
 
-        // border: 1px solid green;
 
     }
 
     &-top-img-div {
         width: 66%;
-        // border: 1px solid green;
     }
 
     &__image {
@@ -237,12 +245,10 @@ HEADER AREA - logo, two item div's
         &:hover {
             cursor: pointer;
         }
-        // border: 1px solid green;
     }
 
     &-shop-now {
         &-block {
-            // border: 1px solid yellow;
 
             flex: 1 0 0;
 
@@ -251,7 +257,6 @@ HEADER AREA - logo, two item div's
         }
         
         &-headings {
-            // border: 1px solid green;
             position: absolute;
             top: 32%;
 
@@ -265,7 +270,6 @@ HEADER AREA - logo, two item div's
         &__heading {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            // border: 1px solid red;
             text-align: center;
 
 
@@ -324,7 +328,6 @@ HEADER AREA - logo, two item div's
         flex-direction: column;
         position: relative;
 
-        // border: 1px solid red;
         border-bottom: 1px solid var(--color-border);
 
         width: 30rem;
@@ -338,7 +341,6 @@ HEADER AREA - logo, two item div's
 
     &__details {
         margin-top: 1.2rem;
-        // border: 1px solid red;
 
         height: 100%;
     }
@@ -364,7 +366,6 @@ HEADER AREA - logo, two item div's
         justify-content: space-between;
 
         margin-bottom: 1rem;
-        // border: 1px solid red;
     }
 
     &__per-unit {
@@ -381,7 +382,6 @@ HEADER AREA - logo, two item div's
         &-right {
             display: flex;
             align-items: center;
-            // border: 1px solid red;
         }
     }
 
@@ -418,7 +418,6 @@ HEADER AREA - logo, two item div's
             &:hover {
                 cursor: pointer;
             }
-            // border: 1px solid red;
         }
         &__text {
             margin-left: 5px;
@@ -427,8 +426,6 @@ HEADER AREA - logo, two item div's
         }
 
         &-icon-div {
-            // background-color: yellow;
-            // border: 1px solid red;
             border-radius: 50%;
             padding: 5px;
             fill: var(--color-green-light-1);
@@ -439,7 +436,6 @@ HEADER AREA - logo, two item div's
             height: 1.4rem;
             width: 1.4rem;
             display: block;
-            // border: 1px solid green;
 
             
         }
@@ -537,7 +533,6 @@ HEADER AREA - logo, two item div's
             }
             
             &-div-2 {
-                // border: 1px solid green;
                 padding: 0.6rem 0.8rem;
                 border-radius: 100%;
                 background-color: var(--color-primary-dark);
@@ -550,12 +545,10 @@ HEADER AREA - logo, two item div's
         }
 
         &-end {
-            // border: 1px solid green;
             margin-left: 20rem;
             margin-top: -14rem;
 
             &-flex {
-                // border: 1px solid yellow;
                 display: flex;
                 & div:not(:first-child) {
                     margin-left: 1.4rem;
@@ -580,7 +573,6 @@ HEADER AREA - logo, two item div's
     &-icons {
         display: flex;
         justify-content: space-between;
-        // color: 1px solid green;
         margin-right: 1rem;
         margin-top: -5px;
     }
@@ -589,7 +581,6 @@ HEADER AREA - logo, two item div's
 .footer-container-mid {
     display: flex;
     width: 30%;
-    // border: 1px solid yellow;
     margin-left: 8rem;
     justify-content: space-between;
 }
@@ -660,4 +651,5 @@ HEADER AREA - logo, two item div's
 .page-end-container {
     margin-bottom: 8rem;
 }
+
 

@@ -15,23 +15,28 @@ const justinListItems = ["New Seasonal Favorites",
 //     ".header-item-div-margin-left"
 //     ).querySelectorAll('.header-item-div-link__text');
 
-const testElement= document.querySelectorAll('.dropdown');
-const testElement1= document.querySelectorAll('.header-item-div-container');
+const dropdown = document.querySelectorAll('.dropdown');
+const dropdownActivator = document.querySelectorAll('.header-item-div-container');
+const dropdownDiv = document.querySelector('.dropdown');
 
-
-
-for(var i=0; i<testElement.length; i++) {
-    testElement[i].style.display = 'none';
+for(var i=0; i<justinListItems.length; i++) {
+    var li = document.createElement('li');
+    li.innerHTML = justinListItems[i];
+    li.classList.add("dropdown-container__li");
+    dropdownDiv.appendChild(li);
 }
 
-testElement[0].style.display = 'block';
+for(var i=0; i<dropdown.length; i++) {
+    dropdown[i].style.display = 'none';
+}
 
 
-for(var i=0; i<testElement1.length; i++) {
-    testElement1[i].addEventListener("mouseover", function(evt){
-        // this.children[1].style.display = 'block';
+
+for(var i=0; i<dropdownActivator.length; i++) {
+    dropdownActivator[i].addEventListener("mouseover", function(evt){
+        this.children[1].style.display = 'block';
     })
-    testElement1[i].addEventListener("mouseout", function(evt){
-        // this.children[1].style.display = 'none';
+    dropdownActivator[i].addEventListener("mouseout", function(evt){
+        this.children[1].style.display = 'none';
     })
 }

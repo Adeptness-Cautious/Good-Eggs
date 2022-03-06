@@ -155,7 +155,7 @@ HEADER AREA - logo, two item div's
   border: 1px solid var(--color-border);
   border-top: 0;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  background: var(--color-primary);
 }
 
 .dropdown-container {
@@ -163,10 +163,14 @@ HEADER AREA - logo, two item div's
 }
 
 .dropdown-container__li {
-  margin: 1rem 4rem 1rem 2rem;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
+  margin: 1rem 4rem 3rem 3rem;
+}
+
+.dropdown-container__li:last-child {
+  margin-bottom: 2rem;
 }
 
 .small-card-heading {

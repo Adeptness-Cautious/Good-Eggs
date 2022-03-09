@@ -149,6 +149,18 @@ HEADER AREA - logo, two item div's
   fill: var(--color-heart);
 }
 
+.header__svg-icon--cursor {
+  cursor: pointer;
+}
+
+.header__svg-icon-search--fill {
+  fill: black;
+}
+
+.header__svg-icon-search--fill:hover {
+  fill: var(--color-green-dark-1);
+}
+
 .dropdown {
   position: absolute;
   top: 11.5rem;

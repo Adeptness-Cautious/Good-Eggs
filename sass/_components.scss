@@ -98,6 +98,18 @@ HEADER AREA - logo, two item div's
             margin-right: -.5rem;
             fill: var(--color-heart);
         }
+
+        &--cursor {
+            cursor: pointer; 
+        }
+
+        &-search--fill {
+            fill: black;
+
+            &:hover {
+                fill:  var(--color-green-dark-1);
+            }
+        }
     }
 }
 

@@ -1,5 +1,11 @@
+//List Items Dropdown
+const dropdown = document.querySelectorAll('.dropdown');
+const dropdownActivator = document.querySelectorAll('.header-item-div-container');
+const dropdownDiv = document.querySelectorAll('.dropdown');
 
-
+//Shopping Logo Hover Dropdown
+const shoppingLogo = document.querySelector('.header__svg-icon-shop-bag');
+const shoppingLogoHoverWindow = document.querySelector('.shopping-dropdown-container');
 
 const justinListItems = ["New Seasonal Favorites", "New to the Market", "Breadwinners", "Celebrating 10 Years Together", "Takeout at Home", "Keen on Green", "Fresh Catch", "St. Patrick's Day"]
 
@@ -10,12 +16,19 @@ const produce = ["New & Peak Season", "CSA Boxes", "Prepped Fruit", "Prepped Veg
 const listItems = [justinListItems, mealKits, produce]
 
 
-const dropdown = document.querySelectorAll('.dropdown');
-const dropdownActivator = document.querySelectorAll('.header-item-div-container');
-const dropdownDiv = document.querySelectorAll('.dropdown');
+
+shoppingLogoHoverWindow.style.display = 'none';
+
+shoppingLogo.addEventListener("mouseover", function(evt){
+    shoppingLogoHoverWindow.style.display = 'block';
+})
+shoppingLogo.addEventListener("mouseout", function(evt){
+    shoppingLogoHoverWindow.style.display = 'none';
+})
+
+
 
 const addListElements = (List, divIndex) => {
-        console.log(List);
         for(var i=0; i<List.length; i++) {
             var li = document.createElement('li');
             li.innerHTML = List[i];

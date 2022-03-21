@@ -197,6 +197,10 @@ HEADER AREA - logo, two item div's
   align-items: center;
 }
 
+.one-edge-shadow {
+  box-shadow: 0 8px 1px -6px rgba(0, 0, 0, 0.4);
+}
+
 .shopping-dropdown-container {
   position: absolute;
   top: 11.5rem;
@@ -207,12 +211,19 @@ HEADER AREA - logo, two item div's
   border-top: none;
 }
 
-.shopping-dropdown-top-p {
+.shopping-dropdown-top_p {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-orange-light);
   padding: 1rem;
+  font-weight: 400;
+}
+
+.shopping-dropdown-top_p--text {
+  font-weight: 600;
+  font-style: bold;
+  letter-spacing: .8px;
 }
 
 .shopping-dropdown-mid {
@@ -232,6 +243,8 @@ HEADER AREA - logo, two item div's
 
 .shopping-dropdown-bottom__p {
   padding: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .8px;
 }
 
 .shopping-dropdown-checkout-btn {
@@ -675,5 +688,11 @@ HEADER AREA - logo, two item div's
 
 .page-end-container {
   margin-bottom: 8rem;
+}
+
+.hr-line {
+  height: 4rem;
+  margin-top: 1.8rem;
+  color: var(--color-border);
 }
 /*# sourceMappingURL=main.css.map */

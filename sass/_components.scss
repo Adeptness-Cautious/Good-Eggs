@@ -146,10 +146,17 @@ HEADER AREA - logo, two item div's
     }
 }
 
+
 //SHOPPING CART DROPDOWN
 .header-shopping-dropdown {
     display: flex;
     align-items: center;
+}
+
+.one-edge-shadow {
+	// -webkit-box-shadow: 0 8px 6px -6px black;
+	//    -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 1px -6px rgba(0,0,0,.4);
 }
 
 .shopping-dropdown{
@@ -162,18 +169,26 @@ HEADER AREA - logo, two item div's
         width: 40rem;
         height: 18rem;
         border: 1px solid var(--color-border);
+        // box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
         border-top: none;
 
     }
 
-    &-top-p {
+    &-top_p {
         display: flex;
         justify-content: center;
         align-items: center;
         
         background-color: var(--color-orange-light);
-
         padding: 1rem;
+
+        font-weight: 400;
+
+        &--text {
+            font-weight: 600;
+            font-style: bold;
+            letter-spacing: .8px;
+        }
     }
 
     &-mid {
@@ -192,6 +207,8 @@ HEADER AREA - logo, two item div's
 
         &__p {
             padding: 1.2rem;
+            font-weight: 400;
+            letter-spacing: .8px;
         }
     }
 
@@ -736,4 +753,8 @@ HEADER AREA - logo, two item div's
     margin-bottom: 8rem;
 }
 
-
+.hr-line {
+    height: 4rem;
+    margin-top: 1.8rem;
+    color: var(--color-border);
+}
